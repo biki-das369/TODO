@@ -1,0 +1,28 @@
+/* Custom Scrollbar Styling */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* .custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 8px;
+} */
+
+/* .custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #ff3f3b; 
+  border-radius: 8px;
+  border: 2px solid #f1f1f1; 
+} */
+
+/* Firefox support */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #ff3f3b transparent; /* thumb and track */
+  
+}
+
+html {
+  transition: all 0.3s ease;
+}
+
+

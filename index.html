@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Telwind CDN link -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="overflow-hidden">
+
+    <main class="w-screen md:w-auto h-screen bg-[#f3f5f7] flex flex-col items-center">
+        <div class="w-150 h-45 bg-white mt-30 rounded-xl flex flex-col items-center p-5 shadow-lg">
+            <h1 class="font-bold text-3xl">TO-<span class="text-[#ff3f3b]">DO.</span></h1>
+
+            <div class="search-box w-full flex items-center mt-5 relative">
+                <input type="text" placeholder="Enter Task.."
+                    class=" border border-[#e7eaeb] border-2 py-3 px-3 pe-10 rounded-2xl w-full outline-none text-gray-600">
+                <button id="add-button"
+                    class="add-btn bg-[#ff3f3b] w-9 h-9 rounded-full  absolute right-2  cursor-pointer hover:bg-[#ff6867]"><i
+                        class="fa-solid fa-plus text-white"></i></button>
+            </div>
+            
+        </div>
+        <div class="list-container mt-10 w-155 h-80 p-2 overflow-y-auto custom-scrollbar">
+            <!-- <div class="item w-full h-auto bg-white rounded-lg flex items-center justify-between mb-2 flex p-3">
+                <p class="text-gray-600 w-[90%] pe-1">Lorem ipsum dolor</p>
+                <div class="buttons w-[10%] flex gap-2 ">
+                    <button  class="task-accept w-7 h-7 bg-[#f3f4f5] text-[#6aaf8e] rounded-sm hover:bg-[#cafce4] cursor-pointer"><i class="fa-solid fa-check text-sm"></i></button>
+                    <button class="task-delete w-7 h-7 bg-[#f3f5f7] text-[#ff6867] rounded-sm hover:bg-[#ffc5c4] cursor-pointer"><i class="fa-solid fa-trash text-sm"></i></button>
+                </div>
+            </div> -->
+        </div>
+        <div class="buttons flex gap-2 mt-2 ">
+            <button class="all  w-auto px-2 py-1 bg-blue-500 rounded-sm text-white cursor-pointer  transition-all duration-300 ease-in hover:bg-blue-600">All</button>
+            <button class=" active w-auto px-2 py-1 bg-[#12af5a] rounded-sm text-white cursor-pointer transition-all duration-300 ease-in hover:bg-green-600">Active</button>
+            <button class="completed  w-auto px-2 py-1 bg-[#aa66fc] rounded-sm text-white cursor-pointer transition-all duration-300 ease-in hover:bg-purple-600">Completed</button>
+            <button class="delete-all-complete   w-auto px-2 py-1 bg-[#fb5640] rounded-sm text-white cursor-pointer transition-all duration-300 ease-in hover:bg-red-600">Clear Completed</button>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
